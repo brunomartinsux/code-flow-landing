@@ -1,0 +1,21 @@
+<div class="container-fluid d-flex flex-column justify-content-center" style="padding: 5% 30%; height: 100vh; background-color: black;">
+    <img src="assets/Logo.png" class="my-4 slide-in-right" width="250px">
+    <div class="col d-flex justify-content-center p-5 align-items-center slide-in-left" style="background-color: #ffff; border-radius: 16px;">
+        <form class="login-form w-100 px-5 d-flex flex-column">
+            <div class="form-group">
+                <label for="email" class="input-label">E-mail</label>
+                <input type="text" name="email" id="email" class="form-control input-group" placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group my-3">
+                <label for="password" class="input-label">Senha</label>
+                <input type="text" name="email" id="email" class="form-control input-group" placeholder="Digite sua senha">
+            </div>
+            <div class="form-group mb-3">
+                <input type="checkbox" name="remember-pass" id="remember-pass">
+                <label for="remember-pass" class="mx-2">Lembrar meu email</label>
+            </div>
+            <button class="btn btn-primary" (click)="doLogin()">Logar</button>
+            <button class="btn my-2" routerLink="register">Cadastrar-se</button>
+        </form>
+    </div>
+</div>

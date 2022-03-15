@@ -1,0 +1,14 @@
+<div class="row px-4 header-container justify-content-between">
+    <div class="col-4 navbar-brand">
+        <h2 class="m-0">Fiscalbase</h2>
+    </div>
+    <div class="col-auto d-flex" style="position: fixed; right: 80px;">
+            <input type="text" class="form-control search-bar" placeholder="Pesquise" #searchInput (keyup.enter)="submitSearch(searchInput.value)">
+            <div class="col-auto search-icon">
+                <i class="fa-solid fa-search fa-xl text-muted"></i>
+            </div>
+    </div>
+    <div class="col-auto header-nav">
+        <i class="fa-solid fa-circle-user fa-2x text-muted"></i>
+    </div>
+</div>
