@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  menuState: boolean = false // comportamento do icone de menu
+
   constructor() { }
 
   ngOnInit(): void {

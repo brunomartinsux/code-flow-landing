@@ -2,11 +2,10 @@
     height: 60px;
     align-items: center;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
-    position: fixed;
     margin: 0;
     width: 100%;
     top: 0;
-    background-color: #fff;
+    background-color: black;
     z-index: 1000;
   }
 

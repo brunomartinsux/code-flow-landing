@@ -5,11 +5,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
-import { TableComponent } from './components/table/table.component';
 import { HttpClientModule } from '@angular/common/http'
 import { NgxMaskModule } from 'ngx-mask';
 import { IConfig } from 'ngx-mask';
 import { PipesModule } from './pipes/pipes.module';
+import { HeroComponent } from './components/hero/hero.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { MethodsComponent } from './components/methods/methods.component';
+import { ServicesComponentComponent } from './components/services-component/services-component.component';
+import { TeamComponent } from './components/team/team.component';
+import { CtaComponentComponent } from './components/cta-component/cta-component.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
@@ -17,12 +23,6 @@ const routes: Routes = [
   {
     path: '',
     component: HomePageComponent,
-    children: [
-      {
-        path: '',
-        component: TableComponent
-      }
-    ]
   },
   {
     path: 'login',
@@ -34,7 +34,13 @@ const routes: Routes = [
     AppComponent,
     HomePageComponent,
     HeaderComponent,
-    TableComponent
+    HeroComponent,
+    AboutUsComponent,
+    MethodsComponent,
+    ServicesComponentComponent,
+    TeamComponent,
+    CtaComponentComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

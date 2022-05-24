@@ -1,0 +1,47 @@
+
+.title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.data-card .title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.data-card .index{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.data-card .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+.data-card .icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg{
+    background-color: var(--orange-base);
+    border-radius: 13px;
+    width: 25px;
+    height: 45px;
+    transform: matrix(0.5, 0.87, -0.86, 0.5, 0, 0);
+    display: absolute;
+}
+
+.icon i{
+    position: absolute;
+}

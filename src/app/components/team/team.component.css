@@ -1,0 +1,4 @@
+.disabled{
+    color: var(--snow-light);
+    pointer-events: none;
+}

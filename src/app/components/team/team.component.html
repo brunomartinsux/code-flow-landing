@@ -1,0 +1,25 @@
+<div class="container-fluid py-4">
+    <h1 class="text-center title my-4">Nosso time será o seu diferencial competitivo</h1>
+    <div class="carrousel" *ngFor="let card of cards; index as indexOfCard">
+        <ng-container *ngIf="indexOfCard == displayCarrouselState">
+            <p class="text-center my-4" style="min-height: 120px;">{{card.text}}</p>
+            <div class="row mx-0 d-flex justify-content-center align-items-center">
+                <div class="col-auto px-0">
+                    <img [src]="card.img" alt="team-img">
+                </div>
+                <div class="col-auto px-0 mx-2">
+                    <p class="m-0">{{card.name}}</p>
+                    <small>{{card.role}}</small>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    <div class="w-100 mx-0 d-flex justify-content-center align-items-center my-4">
+        <div class="col-auto" (click)="handleClick('left')">
+            <i class="fa-regular fa-arrow-left fa-xl mx-5 pointer" [ngClass]="{'disabled':displayCarrouselState == 0}"></i>
+        </div>
+        <div class="col-auto" (click)="handleClick('right')">
+            <i class="fa-regular fa-arrow-right fa-xl mx-5 pointer" [ngClass]="{'disabled':displayCarrouselState == cards.length - 1}"></i>
+        </div>
+    </div>
+</div>

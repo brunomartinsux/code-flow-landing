@@ -1,0 +1,13 @@
+.title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.img-container{
+    height: 248px;
+    width: 100%;
+    margin: 40px 0;
+    background: var(--snow-light);
+}
