@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-methods',
@@ -7,6 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MethodsComponent implements OnInit {
 
+  displayCarrouselState: number = 0
+  paddingRight: any = 0
+  screenWidth: number = 0;
   
   @Input() title: string = 'O processo de desenvolvimento';
   @Input() subtitle: string = 'Projetamos e desenvolvemos produtos digitais para empresas e startups.';
@@ -17,10 +20,26 @@ export class MethodsComponent implements OnInit {
     {title: 'Deploy', text: 'Participamos ativamente da sustentação e evolução contínua do produto. '},
     {title: 'Repetição', text: 'Evoluímos continuamente. Acompanhando métricas, mensurando impactos e aprendizados da solução.'}]
 
+    @HostListener('window:resize', ['$event'])
+    getScreenSize(event?: any) {
+          this.screenWidth = window.innerWidth;
+    }
 
   constructor() { }
 
   ngOnInit(): void {
+    this.screenWidth = window.innerWidth 
   }
+
+  handleClick(type: 'left' | 'right'){
+    console.log(this.paddingRight);
+    
+    if(type == 'left'){
+      this.paddingRight = this.paddingRight - 1000
+    } else {
+      this.paddingRight = this.paddingRight + 1000
+    }
+  }
+
 
 }

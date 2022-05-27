@@ -117,6 +117,10 @@ body {
     width: auto !important;
     justify-content: space-between !important;
     align-items: center;
-    height: 56px;
+    height: 56px !important;
   }
 
+  .disabled{
+    color: rgba(150, 150, 150, 0.377);
+    pointer-events: none;
+}

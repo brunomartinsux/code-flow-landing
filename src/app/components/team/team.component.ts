@@ -13,7 +13,7 @@ export class TeamComponent implements OnInit {
     {text: '“Somos movidos pelo propósito de impactar positivamente pessoas.”', img: 'assets/team-img.svg', name: 'Larissa Kamers', role: 'Designer UX/UI'},
     {text: '“Somos movidos pelo propósito de impactar positivamente pessoas, comunidades e negócios por meio da tecnologia. movidos pelo propósito de impactar positivamente pessoas, ”', img: 'assets/team-img.svg', name: 'Ramon Galdino', role: 'Desenvolvedor Mobile'},
     {text: '“Somos movidos pelo propósito de impactar positivamente pessoas, comunidades e negócios por meio da tecnologia.”', img: 'assets/team-img.svg', name: 'Leonardo Lopes', role: 'Desenvolvedor Full-Stack'},
-    {text: '“Somos movidos pelo propósito de impactar positivamente pessoas, comunidades e negócios por meio da tecnologia.”', img: 'assets/team-img.svg', name: 'João Lemos', role: 'Product Owner'},
+    {text: '“Somos movidos pelo propósito de impactar positivamente pessoas, comunidades e negócios por meio da tecnologia.”', img: 'assets/team-img.svg', name: 'João Gonzales', role: 'Product Owner'},
   ]
 
   constructor() { }

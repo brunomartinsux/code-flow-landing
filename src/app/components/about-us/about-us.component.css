@@ -45,3 +45,16 @@
 .icon i{
     position: absolute;
 }
+
+.card-container {
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+    .card-row{
+        width: 90%;
+        padding-left: 5%;
+    }
+}

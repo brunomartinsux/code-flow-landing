@@ -16,6 +16,7 @@ import { ServicesComponentComponent } from './components/services-component/serv
 import { TeamComponent } from './components/team/team.component';
 import { CtaComponentComponent } from './components/cta-component/cta-component.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { InvitePageComponent } from './invite-page/invite-page.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
@@ -28,6 +29,10 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login-saga/login-saga.module').then((m) => m.LoginSagaModule)
   },
+  {
+    path:'invite',
+    component: InvitePageComponent,
+  }
 ]
 @NgModule({
   declarations: [
