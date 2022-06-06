@@ -1,0 +1,8 @@
+.footer-route{
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-route:hover{
+    cursor: pointer;
+    font-weight: 600;
+}

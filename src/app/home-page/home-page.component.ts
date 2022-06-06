@@ -13,4 +13,12 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleRouter(event: string){
+    let el: HTMLElement = document.getElementById(event) as HTMLElement
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+
 }

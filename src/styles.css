@@ -118,6 +118,7 @@ body {
     justify-content: space-between !important;
     align-items: center;
     height: 56px !important;
+    font-weight: 600;
   }
 
   button.btn.btn-primary:hover{
@@ -133,7 +134,6 @@ body {
 .grow-animation:hover{
   transition: transform 1s;
   transform: translateX(0) scale(1.2);
-  cursor: default;
 }
 
 .text-focus-in {

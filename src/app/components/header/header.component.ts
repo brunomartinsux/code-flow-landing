@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,15 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   menuState: boolean = false // comportamento do icone de menu
+  window = window // parametro para pegar tamanho da tela
+  showMenu: boolean = false // parametro para estado do menu pelo navbar
+  
+  @Output() routeEmitter: EventEmitter<string> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  submitSearch(event: string){
-    console.log(event);
-    
   }
 
 }

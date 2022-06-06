@@ -1,14 +1,14 @@
-<app-header></app-header>
+<app-header (routeEmitter)="handleRouter($event)"></app-header>
 <div class="container-fluid px-0" style="height: 100vh;">
     <div class="container-fluid h-100 px-0" style="padding-top: 38px;">
         <div class="col px-0">
-            <app-hero></app-hero>
-            <app-about-us></app-about-us>
-            <app-methods></app-methods>
-            <app-services-component></app-services-component>
-            <app-team></app-team>
-            <app-cta-component></app-cta-component>
-            <app-footer></app-footer>
+            <app-hero id="hero"></app-hero>
+            <app-about-us id="about-us"></app-about-us>
+            <app-methods id="methods"></app-methods>
+            <app-services-component id="services"></app-services-component>
+            <app-team id="team"></app-team>
+            <app-cta-component id="cta"></app-cta-component>
+            <app-footer (routeEmitter)="handleRouter($event)"></app-footer>
         </div>
     </div>
 </div>
