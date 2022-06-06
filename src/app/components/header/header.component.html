@@ -14,7 +14,7 @@
                 <div class="col-auto mx-4 grow-animation pointer" (click)="routeEmitter.emit('services'); showMenu = false">Serviços</div>
                 <div class="col-auto mx-4 grow-animation pointer" (click)="routeEmitter.emit('team'); showMenu = false">Time</div>
             </div>
-            <button class="btn btn-primary">Falar no Whatsapp</button>
+            <button class="btn btn-primary" (click)="sendToWpp()">Falar no Whatsapp</button>
         </div>
     </div>
 </div>

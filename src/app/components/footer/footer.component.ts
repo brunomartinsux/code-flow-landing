@@ -13,5 +13,10 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  // Abre link do wpp.web
+  sendToWpp(){
+    window.open('https://wa.me/5547988724280?text=Gostaria+de+conhecer+mais+sobre+a+Code.Flow+%3B%29')
+  }
 
 }
