@@ -1,4 +1,4 @@
-<div class="row p-4 py-2 header-container justify-content-between" #headerContainer>
+<div class="row p-5 py-3 header-container justify-content-between" #headerContainer>
     <div class="col-4 navbar-brand mt-2">
         <img src="assets/Logo.png" alt="">
     </div>
@@ -14,7 +14,7 @@
                 <div class="col-auto mx-4 grow-animation pointer" (click)="routeEmitter.emit('faq'); showMenu = false">Dúvidas</div>
                 <div class="col-auto mx-4 grow-animation text-muted">Blog</div>
             </div>
-            <button class="btn btn-primary" (click)="sendToWpp()">Falar no Whatsapp</button>
+            <button class="outline-btn" (click)="sendToWpp()">Falar com um consultor</button>
         </div>
     </div>
 </div>

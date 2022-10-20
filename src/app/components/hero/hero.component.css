@@ -16,7 +16,7 @@
 }
 
 .hero-container {
-  height: 60vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

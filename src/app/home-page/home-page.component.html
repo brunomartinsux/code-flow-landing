@@ -1,24 +1,29 @@
-<app-header (routeEmitter)="handleRouter($event)"></app-header>
+<app-header (routeEmitter)="handleRouter($event)" id="hero"></app-header>
 <div class="container-fluid px-0" style="height: 100vh;">
     <div class="container-fluid h-100 px-0" style="padding-top: 38px;">
         <div class="col px-0">
-            <app-hero id="hero"></app-hero>
+            <app-hero></app-hero>
             <app-about-us id="about-us"></app-about-us>
             <!-- Middle hero -->
-            <div id="middle-hero" class="middle-hero-container d-flex flex-column align-items-center justify-content-between m-4 pb-5"
-                style="background-color: black; height: 550px;">
-                <div class="text-center" style="font-weight: 700;font-size: 24px;">Rápido,
-                    personalizado e eficiente.</div>
-                <div class="text-center">
-                    Ofertamos o que há de melhor para administração e redução do passivo tributário de nossos clientes.
+            <div id="middle-hero"
+                class="middle-hero-container d-flex flex-column align-items-center justify-content-between m-4 pb-5"
+                style="background-color: #000A14; height: 550px;">
+                <div class="col-auto px-0 d-flex flex-column align-items-center">
+                    <div class="text-center" style="font-weight: 700;font-size: 24px;">Rápido,
+                        personalizado e eficiente.</div>
+                    <div class="text-center my-2">
+                        Ofertamos o que há de melhor para administração e redução do passivo tributário de nossos
+                        clientes.
+                    </div>
+                    <button class="outline-btn mt-2">Falar com um consultor</button>
                 </div>
-                <button class="outline-btn">Falar com um consultor</button>
                 <div class="img" style="height: 250px; width: 90%; background-color: gray;"></div>
             </div>
             <!-- E-mail call -->
             <div id="email-call" class="email-call-container p-4 d-flex flex-column align-items-center"
                 style="background-color: var(--blue-base); color: white">
-                <div class="text-center" style="font-weight: 700;font-size: 24px;">Comece a recuperação fiscal da sua
+                <div class="text-center title" style="font-weight: 700;font-size: 24px;">Comece a recuperação fiscal da
+                    sua
                     empresa.</div>
                 <div class="text-center my-4">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
@@ -32,56 +37,63 @@
                 style="background-color: white; color: #000A14">
                 <div class="text-center" style="font-weight: 700;font-size: 24px">Dúvidas frequentes.</div>
                 <div class="text-center my-4">
-                    Se você não encontrou sua dúvida, entre em contato conosco <strong class="text-primary pointer">aqui</strong>
+                    Se você não encontrou sua dúvida, entre em contato conosco <strong
+                        class="text-primary pointer">aqui</strong>
                 </div>
-                <div class="faq-container">
-                    <div class="d-flex align-items-center justify-content-between">
+                <div class="faq-container pointer">
+                    <div class="d-flex align-items-center justify-content-between"
+                        (click)="faqControl[0] = !faqControl[0]">
                         <div class="faq-title">
                             O passivo tributário prescreve?
                         </div>
-                        <div class="faq-icon pointer" (click)="faqControl[0] = !faqControl[0]">
-                            <i class="fa-regular" [ngClass]="{'fa-angle-right': !faqControl[0], 'fa-angle-down': faqControl[0]}"></i>
+                        <div class="faq-icon pointer">
+                            <i class="fa-regular"
+                                [ngClass]="{'fa-angle-right': !faqControl[0], 'fa-angle-down': faqControl[0]}"></i>
                         </div>
                     </div>
-                    <div class="faq-content slide-in-top" [hidden]="!faqControl[0]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <div class="faq-content" [hidden]="!faqControl[0]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Suspendisse varius enim in eros elementum tristique.
                     </div>
-                  
+
                 </div>
-                <div class="faq-container">
-                    <div class="d-flex align-items-center justify-content-between">
+                <div class="faq-container pointer">
+                    <div class="d-flex align-items-center justify-content-between"
+                        (click)="faqControl[1] = !faqControl[1]">
                         <div class="faq-title">
                             Como faço para regularizar meu passivo?
                         </div>
-                        <div class="faq-icon pointer" (click)="faqControl[1] = !faqControl[1]">
-                            <i class="fa-regular" [ngClass]="{'fa-angle-right': !faqControl[1], 'fa-angle-down': faqControl[1]}"></i>
+                        <div class="faq-icon pointer">
+                            <i class="fa-regular"
+                                [ngClass]="{'fa-angle-right': !faqControl[1], 'fa-angle-down': faqControl[1]}"></i>
                         </div>
                     </div>
-                    <div class="faq-content slide-in-top" [hidden]="!faqControl[1]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <div class="faq-content" [hidden]="!faqControl[1]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Suspendisse varius enim in eros elementum tristique.
                     </div>
-                  
+
                 </div>
-                <div class="faq-container">
-                    <div class="d-flex align-items-center justify-content-between">
+                <div class="faq-container pointer">
+                    <div class="d-flex align-items-center justify-content-between"
+                        (click)="faqControl[2] = !faqControl[2]">
                         <div class="faq-title">
                             Quais as consequências da não regularização do meu passivo tributário?
                         </div>
-                        <div class="faq-icon pointer" (click)="faqControl[2] = !faqControl[2]">
-                            <i class="fa-regular" [ngClass]="{'fa-angle-right': !faqControl[2], 'fa-angle-down': faqControl[2]}"></i>
+                        <div class="faq-icon pointer">
+                            <i class="fa-regular"
+                                [ngClass]="{'fa-angle-right': !faqControl[2], 'fa-angle-down': faqControl[2]}"></i>
                         </div>
                     </div>
-                    <div class="faq-content slide-in-top" [hidden]="!faqControl[2]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <div class="faq-content" [hidden]="!faqControl[2]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Suspendisse varius enim in eros elementum tristique.
                     </div>
-                  
+
                 </div>
             </div>
             <div class="w-100" style="background: white;">
-                <img src="assets/section-divider-up.svg" alt="" class="w-100">
+                <img src="assets/section-divider-up.svg" class="w-100">
             </div>
             <app-footer (routeEmitter)="handleRouter($event)"></app-footer>
         </div>
