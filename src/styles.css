@@ -2,148 +2,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 :root {
   --black: #181818;
-    --orange-base: #FBB229;
-    --snow-light: #D5D5D5;
-    --green-base: #55E6A5;
-    --tw-text-opacity: 1;
+  --orange-base: #fbb229;
+  --snow-light: #d5d5d5;
+  --blue-base: #0075f2;
+  --tw-text-opacity: 1;
 }
 
 body {
   background-color: black;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
-.bg-orange{
-    background-color: var(--orange-base) !important;
+.bg-orange {
+  background-color: var(--orange-base) !important;
 }
 
-.bg-snow{
-    background-color: var(--snow-light) !important;
+.bg-snow {
+  background-color: var(--snow-light) !important;
 }
 
-.bg-green{
-    background-color: var(--green-base) !important;
+.bg-green {
+  background-color: var(--blue-base) !important;
 }
 
-.text-primary{
-  color: var(--green-base)
+.text-primary {
+  color: var(--blue-base);
 }
 
-.text-yellow{
-    color: var(--orange-base);
+.text-yellow {
+  color: var(--orange-base);
 }
 
-.text-muted{
-    color: var(--snow-light);
+.text-muted {
+  color: var(--snow-light);
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
-
 
 /* Animações */
 
 .slide-in-right {
-	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
   }
-  @keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
-  
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-  .slide-in-left {
-	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-in-left {
-    0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
   }
-  @keyframes slide-in-left {
-    0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-    }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
-
-  /* Botao padrao centralizado */
-  button.btn.btn-primary{
-    background-color: var(--green-base);
-    border: none;
-    font-size: 16px;
-    color: black;
-    display: flex !important;
-    font-weight: 500;
-    width: auto !important;
-    justify-content: space-between !important;
-    align-items: center;
-    height: 56px !important;
-    font-weight: 600;
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
   }
-
-  button.btn.btn-primary:hover{
-    transition: transform 1s;
-    transform: translateX(0) scale(1.1);
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
-
-  .disabled{
-    color: rgba(150, 150, 150, 0.377);
-    pointer-events: none;
 }
 
-.grow-animation:hover{
+/* Botao padrao centralizado */
+button.btn.btn-primary {
+  background-color: var(--blue-base);
+  border: none;
+  font-size: 16px;
+  padding: 24px;
+  color: white;
+  display: flex !important;
+  font-weight: 500;
+  width: auto !important;
+  justify-content: space-between !important;
+  align-items: center;
+  height: 56px !important;
+  font-weight: 600;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 32px;
+}
+
+button.btn.btn-primary:hover {
+  transition: transform 1s;
+  transform: translateX(0) scale(1.1);
+}
+
+.disabled {
+  color: rgba(150, 150, 150, 0.377);
+  pointer-events: none;
+}
+
+.grow-animation:hover {
   transition: transform 1s;
   transform: translateX(0) scale(1.2);
 }
 
 .text-focus-in {
-	-webkit-animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .tracking-in-expand {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 @keyframes tracking-in-expand {
@@ -162,12 +163,43 @@ body {
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-filter: blur(0px);
-            filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
+
+.slide-in-top {
+	-webkit-animation: slide-in-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+

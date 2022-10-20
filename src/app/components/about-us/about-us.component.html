@@ -1,13 +1,34 @@
-<div class="d-flex flex-column align-items-center justify-content-center my-5 mx-2">
-    <h1 class="text-center title">{{title}}</h1>
-</div>
-<div class="d-flex flex-column flex-sm-row col-sm-auto align-items-center justify-content-between mb-4 data-card mx-4 card-row">
-    <div class="card-container mb-4 grow-animation" *ngFor="let card of cardData; index as indexOfCard">
-        <div class="icon">
-            <div class="bg"></div>
-            <i class="fa-regular fa-xl" [ngClass]="card.icon"></i>
+<div class="container-fluid p-0 d-flex flex-column align-items-center justify-content-between"
+    style="background-color: white; color: black; min-height: 750px;">
+    <img src="assets/section-divider.svg" alt="" class="w-100" style="margin-top: -5px;">
+    <div class="content-container p-4">
+        <div class="d-flex flex-column align-items-center justify-content-center my-5 mx-2">
+            <h1 class="text-center title">{{title}}</h1>
+            <p class="text-center">Contamos com a parceria e apoio de um escritório de advocacia especializado na área
+                de direito tributário.</p>
         </div>
-        <h1 class="text-center title">{{card.title}}</h1>
-        <p class="text-center text">{{card.text}}</p>
+        <div class="row d-flex align-items-center justify-content-center card-row">
+            <div class="card width-33">
+                <div class="title">Revisão tributária</div>
+                <div class="subtitle">Subtitle</div>
+            </div>
+            <div class="card width-33">
+                <div class="title">Defesa fiscal administrativa</div>
+                <div class="subtitle">Subtitle</div>
+            </div>
+            <div class="card width-33">
+                <div class="title">Blindagem patrimonial</div>
+                <div class="subtitle">Subtitle</div>
+            </div>
+            <div class="card width-50 m-4">
+                <div class="title">Administração do passivo tributário</div>
+                <div class="subtitle">Subtitle</div>
+            </div>
+            <div class="card width-50 m-4">
+                <div class="title">Recuperação e aproveitamento de créditos</div>
+                <div class="subtitle">Subtitle</div>
+            </div>
+        </div>
     </div>
+
 </div>

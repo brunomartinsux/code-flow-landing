@@ -7,9 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  @Input() title: string = 'Lorem ipsum dolor sit amet consectetur ';
-  @Input() subtitle: string = 'Projetamos e desenvolvemos produtos digitais para empresas e startups.';
-  @Input() buttonStyle: {text: string, icon: string} = {text: 'Quero um Orçamento', icon: 'fa-arrow-right'}
+  @Input() title: string = 'Soluções inteligentes para administração e redução do passivo tributário.';
+  @Input() subtitle: string = 'Prestamos nossos serviços de forma totalmente virtual e disponibilizamos de meios de controle e monitoramento de débitos ajuizados.';
+  @Input() buttonStyle: {text: string, icon: string} = {text: 'Falar com um consultor', icon: 'fa-arrow-right'}
 
   constructor() { }
 
@@ -18,6 +18,6 @@ export class HeroComponent implements OnInit {
 
   // Abre link do wpp.web
   sendToWpp(){
-    window.open('https://wa.me/5547988724280?text=Gostaria+de+conhecer+mais+sobre+a+Code.Flow+%3B%29')
+    window.open('https://wa.me/5547997086040?text=Gostaria+de+conhecer+mais+sobre+a+DataJus+%3B%29')
   }
 }

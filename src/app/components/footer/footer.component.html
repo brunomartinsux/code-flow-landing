@@ -1,28 +1,23 @@
-<div class="row p-4 align-items-center justify-content-between w-100 bg-green mx-0" style="color: black;">
-    <div class="col px-0">
-        <h4>Code.Flow</h4>
-        <div class="row mx-0">
-            <small style="font-size: 8px" class="px-0">Entre em contato</small>
-        </div>
-        <div class="row mx-0">
-            <small class="px-0 footer-route" (click)="sendToWpp()">(47) 99674-0418</small>
-        </div>
-        <div class="row mx-0">
-            <small class="px-0 footer-route">email@codeflow.com</small>
-        </div>
+<div class="container-fluid p-4 w-100 mx-0 d-flex flex-column align-items-center"
+    style="color: white; background-color: black; margin-top: -5px; min-height: 300px;">
+    <img src="assets/Logo.png" alt="" class="mt-4">
+    <div class="row d-flex align-items-center justify-content-between my-4">
+        <div class="col-auto" (click)="routeEmitter.emit('hero');">Início</div>
+        <div class="col-auto" (click)="routeEmitter.emit('about-us');">Serviços</div>
+        <div class="col-auto" (click)="routeEmitter.emit('faq');">Dúvidas</div>
+        <div class="col-auto text-muted">Blog</div>
     </div>
-    <div class="col px-0">
-        <div class="row mx-0">
-            <small class="px-0 text-end footer-route" (click)="routeEmitter.emit('about-us')">Sobre nós</small>
-        </div>
-        <div class="row mx-0">
-            <small class="px-0 text-end footer-route" (click)="routeEmitter.emit('methods')">Processos</small>
-        </div>
-        <div class="row mx-0">
-            <small class="px-0 text-end footer-route" (click)="routeEmitter.emit('services')">Serviços</small>
-        </div>
-        <div class="row mx-0">
-            <small class="px-0 text-end footer-route" (click)="routeEmitter.emit('team')">Time</small>
-        </div>
+    <div class="email-call-container d-flex flex-column align-items-center px-4"
+        style="color: white">
+        <div class="text-center" style="font-weight: 700;font-size: 16px;">Comece a recuperação fiscal da sua
+            empresa.</div>
+        <input type="text" class="main-input" placeholder="Digite seu e-mail">
+        <button class="submit-btn">Enviar</button>
     </div>
+    <div class="horizontal-line"></div>
+    <div class="row mx-0">
+        <small class="col-auto px-2">Política de Privacidade</small>
+        <small class="col-auto px-2">Termos de Uso</small>
+    </div>
+    <small class="col px-0 mt-2">2022. Todos os direitos reservados.</small>
 </div>
