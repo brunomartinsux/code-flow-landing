@@ -25,4 +25,8 @@ export class HomePageComponent implements OnInit {
     })
   }
 
+  sendToWpp(){
+    window.open('https://wa.me/5547997086040?text=Gostaria+de+saber+mais+sobre+a+DataJus+%3B%29')
+  }
+
 }

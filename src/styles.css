@@ -227,3 +227,13 @@ button.outline-btn:hover {
   border-radius: 80%;
 
 }
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: var(--snow-light);
+border-radius: 3px;
+outline: none;
+}

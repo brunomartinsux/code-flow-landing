@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
 
   // Abre link do wpp.web
   sendToWpp(){
-    window.open('https://wa.me/5547997086040?text=Gostaria+de+conhecer+mais+sobre+a+DataJus+%3B%29')
+    window.open('https://wa.me/5547997086040?text=Gostaria+de+saber+mais+sobre+a+DataJus+%3B%29')
   }
   
 }
