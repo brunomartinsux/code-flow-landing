@@ -5,22 +5,21 @@
             <app-hero></app-hero>
             <app-about-us id="about-us"></app-about-us>
             <!-- Middle hero -->
-            <div id="middle-hero"
-                class="middle-hero-container d-flex flex-column align-items-center justify-content-between m-4 pb-5"
-                style="background-color: #000A14; height: 550px;">
-                <div class="col-auto px-0 d-flex flex-column align-items-center">
-                    <div class="text-center" style="font-weight: 700;font-size: 24px;">Rápido,
+            <div id="middle-hero" class="middle-hero-container m-4"
+                style="background-color: #000A14">
+                <div class="col-auto px-0 middle-hero-text">
+                    <div style="font-weight: 700;" class="title">Rápido,
                         personalizado e eficiente.</div>
-                    <div class="text-center my-2">
+                    <div class="my-2">
                         Ofertamos o que há de melhor para administração e redução do passivo tributário de nossos
                         clientes.
                     </div>
                     <button class="outline-btn mt-2">Falar com um consultor</button>
                 </div>
-                <div class="img" style="height: 250px; width: 90%; background-color: gray;"></div>
+                <img src="assets/personalizado.jpg" class="img"/>
             </div>
             <!-- E-mail call -->
-            <div id="email-call" class="email-call-container p-4 d-flex flex-column align-items-center"
+            <div id="email-call" class="email-call-container d-flex flex-column align-items-center"
                 style="background-color: var(--blue-base); color: white">
                 <div class="text-center title" style="font-weight: 700;font-size: 24px;">Comece a recuperação fiscal da
                     sua
@@ -29,8 +28,10 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                     tristique.
                 </div>
-                <input type="text" class="main-input" placeholder="Digite seu e-mail">
-                <button class="submit-btn">Enviar</button>
+                <div class="input-email-container">
+                    <input type="text" class="main-input" placeholder="Digite seu e-mail">
+                    <button class="submit-btn">Enviar</button>
+                </div>
             </div>
             <!-- E-mail call -->
             <div id="faq" class="email-call-container p-4 d-flex flex-column align-items-center"

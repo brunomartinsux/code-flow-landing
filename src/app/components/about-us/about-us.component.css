@@ -1,3 +1,19 @@
+
+.about-container {
+  background-color: white;
+  color: #000A14;
+  overflow-x: hidden;
+}
+
+.content-container {
+  padding: 32px;
+}
+
+.divider{
+  transform: rotate(180deg); 
+  margin-top: 0px;
+}
+
 .title {
   font-weight: 700;
   font-size: 24px;
@@ -7,7 +23,7 @@
 .card {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: baseline;
   text-align: center;
   background-color: #f4f4f4;
   border: none;
@@ -23,26 +39,55 @@
 
 @media (min-width: 1200px) {
 
-  .card{
-    min-height: 100px;
+  .about-container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -100px;
+  }
+
+  .card {
+    min-height: 150px;
+    font-size: 18px;
+    display: flex;
+    justify-content: baseline;
+
+    .title{
+      font-size: 22px !important;
+      margin-bottom: 16px;
+    }
   }
 
   .card-row {
-    width: 90%;
-    padding-left: 5%;
+    padding-inline: 50px;
   }
 
-  .width-33{
+  .width-33 {
     width: 30%;
     margin: 0 18px;
   }
 
-  .width-50{
+  .width-50 {
     width: 46%;
     margin: 0;
   }
 
-  .content-container{
-    padding-bottom: 150px !important;
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 150px;
+    height: 100%;
+
+    .title{
+      font-size: 48px;
+      width: 700px;
+      line-height: 120%;
+    }
+  }
+
+  .divider{
+   margin-top: -100px;
   }
 }

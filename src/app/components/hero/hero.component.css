@@ -16,19 +16,17 @@
 }
 
 .hero-container {
-  height: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
-
+  margin: 0px;
 }
 
 @media (min-width: 1200px) {
   .hero-container {
     margin: 150px 0px;
-
   }
   /* This part is only read by viewports wider than 1200 pixels */
   .title {
@@ -49,6 +47,11 @@
   }
 
   .hero-container {
-    height: 60vh;
+    min-height: 60vh;
   }
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
 }
