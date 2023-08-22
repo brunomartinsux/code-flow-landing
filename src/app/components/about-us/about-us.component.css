@@ -40,7 +40,7 @@
 @media (min-width: 1200px) {
 
   .about-container{
-    height: 70vh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
