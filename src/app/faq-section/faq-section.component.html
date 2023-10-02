@@ -1,0 +1,58 @@
+<div id="faq" class="email-call-container d-flex flex-column align-items-center"
+style="background-color: white; color: #000A14">
+<div class="text-center title" style="font-weight: 700;font-size: 24px">Dúvidas frequentes.</div>
+<div class="text-center my-4">
+    Se você não encontrou sua dúvida, entre em contato conosco <strong
+        class="text-primary pointer">aqui</strong>
+</div>
+<div class="faq-container pointer mt-5">
+    <div class="d-flex align-items-center justify-content-between"
+        (click)="faqControl[0] = !faqControl[0]">
+        <div class="faq-title">
+            O passivo tributário prescreve?
+        </div>
+        <div class="faq-icon pointer">
+            <i class="fa-regular"
+                [ngClass]="{'fa-angle-right': !faqControl[0], 'fa-angle-down': faqControl[0]}"></i>
+        </div>
+    </div>
+    <div class="faq-content" [hidden]="!faqControl[0]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Suspendisse varius enim in eros elementum tristique.
+    </div>
+
+</div>
+<div class="faq-container pointer">
+    <div class="d-flex align-items-center justify-content-between"
+        (click)="faqControl[1] = !faqControl[1]">
+        <div class="faq-title">
+            Como faço para regularizar meu passivo?
+        </div>
+        <div class="faq-icon pointer">
+            <i class="fa-regular"
+                [ngClass]="{'fa-angle-right': !faqControl[1], 'fa-angle-down': faqControl[1]}"></i>
+        </div>
+    </div>
+    <div class="faq-content" [hidden]="!faqControl[1]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Suspendisse varius enim in eros elementum tristique.
+    </div>
+
+</div>
+<div class="faq-container pointer">
+    <div class="d-flex align-items-center justify-content-between"
+        (click)="faqControl[2] = !faqControl[2]">
+        <div class="faq-title">
+            Quais as consequências da não regularização do meu passivo tributário?
+        </div>
+        <div class="faq-icon pointer">
+            <i class="fa-regular"
+                [ngClass]="{'fa-angle-right': !faqControl[2], 'fa-angle-down': faqControl[2]}"></i>
+        </div>
+    </div>
+    <div class="faq-content" [hidden]="!faqControl[2]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Suspendisse varius enim in eros elementum tristique.
+    </div>
+</div>
+</div>

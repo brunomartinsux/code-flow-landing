@@ -12,6 +12,7 @@ import { PipesModule } from './pipes/pipes.module';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FaqSectionComponent } from './faq-section/faq-section.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = {};
 
@@ -29,6 +30,7 @@ const routes: Routes = [
     HeroComponent,
     AboutUsComponent,
     FooterComponent,
+    FaqSectionComponent,
   ],
   imports: [
     BrowserModule,

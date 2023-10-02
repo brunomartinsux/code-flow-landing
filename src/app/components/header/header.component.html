@@ -11,10 +11,10 @@
                 <div class="col-auto mx-4 grow-animation pointer" (click)="routeEmitter.emit('hero'); showMenu = false">Início
                 </div>
                 <div class="col-auto mx-4 grow-animation pointer" (click)="routeEmitter.emit('about-us'); showMenu = false">Serviços</div>
+                <div class="col-auto mx-4 grow-animation pointer" (click)="goToBlog()">Blog</div>
                 <div class="col-auto mx-4 grow-animation pointer" (click)="routeEmitter.emit('faq'); showMenu = false">Dúvidas</div>
-                <div class="col-auto mx-4 grow-animation text-muted">Blog</div>
             </div>
-            <button class="outline-btn" (click)="sendToWpp()">Falar com um consultor</button>
+            <button class="outline-btn" (click)="sendToWpp()">Entre em contato</button>
         </div>
     </div>
 </div>
@@ -23,5 +23,5 @@
     </div>
     <div class="col-auto m-2 grow-animation pointer" (click)="routeEmitter.emit('about-us'); showMenu = false">Serviços</div>
     <div class="col-auto m-2 grow-animation pointer" (click)="routeEmitter.emit('faq'); showMenu = false">Dúvidas</div>
-    <div class="col-auto m-2 grow-animation text-muted">Blog</div>
+    <div class="col-auto m-2 grow-animation pointer" (click)="goToBlog()">Blog</div>
 </div>

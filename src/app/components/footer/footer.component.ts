@@ -8,6 +8,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   @Output() routeEmitter: EventEmitter<string> = new EventEmitter()
+  window = window // parametro para pegar tamanho da tela
 
   constructor() { }
 
@@ -17,6 +18,10 @@ export class FooterComponent implements OnInit {
   // Abre link do wpp.web
   sendToWpp(){
     window.open('https://wa.me/5547997086040?text=Gostaria+de+saber+mais+sobre+a+DataJus+%3B%29')
+  }
+
+  goToBlog(){
+    window.open('https://medium.com/@datajus.integra')
   }
 
 }

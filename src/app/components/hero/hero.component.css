@@ -25,9 +25,6 @@
 }
 
 @media (min-width: 1200px) {
-  .hero-container {
-    margin: 150px 0px;
-  }
   /* This part is only read by viewports wider than 1200 pixels */
   .title {
     font-style: normal;
@@ -47,11 +44,13 @@
   }
 
   .hero-container {
-    min-height: 60vh;
-  }
-}
+    margin: none !important;
+    min-height: none;
+    height: auto !important;
+    padding: 0;
 
-.particles-js-canvas-el {
-  position: fixed;
-  top: 0;
+    .title{
+      margin: 0 !important;
+    }
+  }
 }

@@ -1,23 +1,57 @@
-<div class="container-fluid p-4 w-100 mx-0 d-flex flex-column align-items-center"
-    style="color: white; background-color: #000A14; margin-top: -5px; min-height: 300px;">
-    <img src="assets/Logo.png" alt="" class="mt-4">
-    <div class="row d-flex align-items-center justify-content-between my-4">
-        <div class="col-auto" (click)="routeEmitter.emit('hero');">Início</div>
-        <div class="col-auto" (click)="routeEmitter.emit('about-us');">Serviços</div>
-        <div class="col-auto" (click)="routeEmitter.emit('faq');">Dúvidas</div>
-        <div class="col-auto text-muted">Blog</div>
+<ng-container *ngIf="window.innerWidth < 1000; else elseHdTemplateFooter">
+    <div class="container-fluid p-4 w-100 mx-0 d-flex flex-column align-items-center"
+        style="color: white; background-color: #000A14; margin-top: -5px; min-height: 300px;">
+        <img src="assets/Logo.png" alt="" class="mt-4">
+        <div class="row d-flex align-items-center justify-content-between my-4">
+            <div class="col-auto pointer grow-animation" (click)="routeEmitter.emit('hero');">Início</div>
+            <div class="col-auto pointer grow-animation" (click)="routeEmitter.emit('about-us');">Serviços</div>
+            <div class="col-auto pointer grow-animation" (click)="routeEmitter.emit('faq');">Dúvidas</div>
+            <div class="col-auto pointer grow-animation" (click)="goToBlog();">Blog</div>
+        </div>
+        <div class="email-call-container d-flex flex-column align-items-center px-4" style="color: white">
+            <div class="text-center" style="font-weight: 700;font-size: 16px;">Comece a recuperação fiscal da sua
+                empresa.</div>
+            <input type="text" class="main-input" placeholder="Digite seu e-mail">
+            <button class="submit-btn">Enviar</button>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="row mx-0">
+            <small class="col-auto px-2">Política de Privacidade</small>
+            <small class="col-auto px-2">Termos de Uso</small>
+        </div>
+        <small class="col px-0 mt-2">2022. Todos os direitos reservados.</small>
     </div>
-    <div class="email-call-container d-flex flex-column align-items-center px-4"
-        style="color: white">
-        <div class="text-center" style="font-weight: 700;font-size: 16px;">Comece a recuperação fiscal da sua
-            empresa.</div>
-        <input type="text" class="main-input" placeholder="Digite seu e-mail">
-        <button class="submit-btn">Enviar</button>
+</ng-container>
+<ng-template #elseHdTemplateFooter>
+    <div class="container-fluid w-100 mx-0 d-flex align-items-center justify-content-between"
+        style="color: white; background-color: #000A14; margin-top: -5px; min-height: 250px;padding: 120px; padding-bottom: 80px;">
+        <div class="col-auto">
+            <img src="assets/Logo.png" alt="" class="mt-4">
+            <div class="row d-flex align-items-center justify-content-between my-4">
+                <div class="col-auto pointer grow-animation" (click)="routeEmitter.emit('hero');">Início</div>
+                <div class="col-auto pointer grow-animation" (click)="routeEmitter.emit('about-us');">Serviços</div>
+                <div class="col-auto pointer grow-animation" (click)="routeEmitter.emit('faq');">Dúvidas</div>
+                <div class="col-auto pointer grow-animation" (click)="goToBlog();">Blog</div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="text-center" style="font-weight: 700;font-size: 16px;">Comece a recuperação fiscal da sua
+                empresa.</div>
+            <div class="d-flex align-items-center justify-content-between" style="color: white">
+                <input type="text" class="main-input mr-2" style="width: 255px; height: 50px;" placeholder="Digite seu e-mail">
+                <button class="submit-btn" style="height: 50px;">Enviar</button>
+            </div>
+        </div>
     </div>
-    <div class="horizontal-line"></div>
-    <div class="row mx-0">
-        <small class="col-auto px-2">Política de Privacidade</small>
-        <small class="col-auto px-2">Termos de Uso</small>
-    </div>
-    <small class="col px-0 mt-2">2022. Todos os direitos reservados.</small>
-</div>
+    <div style="padding-inline:120px; padding-bottom: 80px;">
+        <div class="horizontal-line"></div>
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-auto d-flex mx-0">
+                <small class="col-auto pl-0 pr-2">Política de Privacidade</small>
+                <small class="col-auto px-2">Termos de Uso</small>
+            </div>
+            <div class="col-auto">
+                <small>2023. Todos os direitos reservados.</small>
+            </div>
+        </div></div>
+</ng-template>

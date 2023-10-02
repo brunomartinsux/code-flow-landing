@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-declare var particlesJS: any;
 
 @Component({
   selector: 'app-hero',
@@ -15,7 +14,6 @@ export class HeroComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-      particlesJS.load('particles-js', 'assets/particles.json', null);
   }
 
   // Abre link do wpp.web
