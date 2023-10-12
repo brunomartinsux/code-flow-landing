@@ -1,56 +1,65 @@
 <div id="faq" class="email-call-container d-flex flex-column align-items-center"
-style="background-color: white; color: #000A14">
-<div class="text-center title" style="font-weight: 700;font-size: 24px">Dúvidas frequentes.</div>
-<div class="text-center">
-    Se você não encontrou sua dúvida, entre em contato conosco <strong
-        class="text-primary pointer" (click)="sendToWpp()">aqui</strong>
-</div>
-<div class="faq-container pointer mt-5">
-    <div class="d-flex align-items-center justify-content-between"
-        (click)="faqControl[0] = !faqControl[0]">
-        <div class="faq-title">
-            O passivo tributário prescreve?
-        </div>
-        <div class="faq-icon pointer">
-            <i class="fa-regular"
-                [ngClass]="{'fa-angle-right': !faqControl[0], 'fa-angle-down': faqControl[0]}"></i>
-        </div>
+    style="background-color: white; color: #000A14">
+    <div class="text-center title" style="font-weight: 700;font-size: 24px">Dúvidas frequentes.</div>
+    <div class="text-center">
+        Se você não encontrou sua dúvida, entre em contato conosco <strong class="text-primary pointer"
+            (click)="sendToWpp()">aqui</strong>
     </div>
-    <div class="faq-content" [hidden]="!faqControl[0]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse varius enim in eros elementum tristique.
-    </div>
-</div>
-<div class="faq-container pointer">
-    <div class="d-flex align-items-center justify-content-between"
-        (click)="faqControl[1] = !faqControl[1]">
-        <div class="faq-title">
-            Como faço para regularizar meu passivo?
+    <div class="faq-container pointer mt-5" (click)="faqControl[0] = !faqControl[0]">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="faq-title">
+                O passivo tributário prescreve?
+            </div>
+            <div class="faq-icon pointer">
+                <i class="fa-regular"
+                    [ngClass]="{'fa-angle-right': !faqControl[0], 'fa-angle-down': faqControl[0]}"></i>
+            </div>
         </div>
-        <div class="faq-icon pointer">
-            <i class="fa-regular"
-                [ngClass]="{'fa-angle-right': !faqControl[1], 'fa-angle-down': faqControl[1]}"></i>
+        <div class="faq-content" [hidden]="!faqControl[0]">
+            Sim. De acordo com o artigo 156, V do CTN a prescrição é uma das modalidades de extinção do crédito
+            tributário e ela ocorre ante o não exercício do direito de ação da ação de execução fiscal pela Fazenda
+            Pública dentro do prazo de 5 anos, consoante disposição do artigo 174 do CTN. Além da prescrição mencionada,
+            o Superior Tribunal de Justiça pacificou o entendimento quanto a possibilidade de reconhecimento da
+            prescrição intercorrente na Execução Fiscal com base no artigo 40 da Lei nº 6.830 /1980, que de acordo com o
+            referido artigo ocorre quando o processo ficar parado por mais de 5 anos, decorrido um ano da determinação
+            de suspensão ante a não localização do devedor ou de bens penhoráveis.
         </div>
     </div>
-    <div class="faq-content" [hidden]="!faqControl[1]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse varius enim in eros elementum tristique.
-    </div>
-</div>
-<div class="faq-container pointer">
-    <div class="d-flex align-items-center justify-content-between"
-        (click)="faqControl[2] = !faqControl[2]">
-        <div class="faq-title">
-            Quais as consequências da não regularização do meu passivo tributário?
+    <div class="faq-container pointer" (click)="faqControl[1] = !faqControl[1]">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="faq-title">
+                Quais as consequências da não regularização do meu passivo tributário?
+            </div>
+            <div class="faq-icon pointer">
+                <i class="fa-regular"
+                    [ngClass]="{'fa-angle-right': !faqControl[1], 'fa-angle-down': faqControl[1]}"></i>
+            </div>
         </div>
-        <div class="faq-icon pointer">
-            <i class="fa-regular"
-                [ngClass]="{'fa-angle-right': !faqControl[2], 'fa-angle-down': faqControl[2]}"></i>
+        <div class="faq-content" [hidden]="!faqControl[1]">
+            A não regularização do passivo acarreta na inscrição do débito em dívida ativa e consequentemente o
+            ajuizamento da ação de execução fiscal com a penhora de bens e direitos e em alguns casos, não estando a
+            empresa ativa, o redirecionamento do débito aos sócios.
         </div>
     </div>
-    <div class="faq-content" [hidden]="!faqControl[2]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Suspendisse varius enim in eros elementum tristique.
+    <div class="faq-container pointer" (click)="faqControl[2] = !faqControl[2]">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="faq-title">
+                Como faço para regularizar meu passivo?
+            </div>
+            <div class="faq-icon pointer">
+                <i class="fa-regular"
+                    [ngClass]="{'fa-angle-right': !faqControl[2], 'fa-angle-down': faqControl[2]}"></i>
+            </div>
+        </div>
+        <div class="faq-content" [hidden]="!faqControl[2]">
+            Existem algumas formas de regularização do passivo. Havendo prescrição e ou decadência do débito ou de parte
+            do débito pode-se requer junto ao Fisco ou por meio de ação judicial o reconhecimento da prescrição e ou
+            decadência. Existe também a possibilidade de revisão do débito quando houver ilegalidade na cobrança advinda
+            da cobrança de juros e multa em excesso, ou ainda alguma irregularidade na constituição do crédito
+            tributário. Outra forma de regularização é por meio do parcelamento quando verificado que não há prescrição
+            e ou decadência e ilegalidade na cobrança. E por fim, quando já houver o ajuizamento de ação de execução
+            fiscal, verificado que não há prescrição e ou decadência e ilegalidade na cobrança, existe também a
+            possibilidade de ofertar bens a fim de garantir a execução.
+        </div>
     </div>
-</div>
 </div>
