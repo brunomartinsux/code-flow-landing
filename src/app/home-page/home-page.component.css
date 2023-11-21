@@ -87,7 +87,7 @@ button.submit-btn {
 @media (min-width: 1200px) {
 
   .img {
-    width: auto;
+    width: 100%;
   }
 
   .middle-hero-container {
@@ -95,7 +95,7 @@ button.submit-btn {
     flex-direction: row;
     align-items: center;
     justify-self: center;
-    padding-inline: 20%;
+    padding-inline: 15%;
     padding-block: 3%;
     justify-content: center;
 

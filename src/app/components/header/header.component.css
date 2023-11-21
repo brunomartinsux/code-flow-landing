@@ -10,6 +10,16 @@
     z-index: 1250;
   }
 
+  .header-icon-main{
+    width: 150px;
+    cursor: pointer;
+    transition: width 0.1s;
+
+    &:hover{
+      width: 175px;
+    }
+  }
+
   .navbar-brand{
     display: flex;
     flex-direction: row;

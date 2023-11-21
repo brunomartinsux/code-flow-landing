@@ -14,6 +14,7 @@ export class HomePageComponent implements OnInit {
 
   handleRouter(event: string){
     let el: HTMLElement = document.getElementById(event) as HTMLElement
+
     el.scrollIntoView({
       behavior: 'smooth',
       block: 'start'
@@ -21,7 +22,7 @@ export class HomePageComponent implements OnInit {
   }
 
   sendToWpp(){
-    window.open('https://wa.me/5547997086040?text=Gostaria+de+saber+mais+sobre+a+DataJus+%3B%29')
+    window.open('https://wa.me/5547997262363?text=Gostaria+de+saber+mais+sobre+a+DataJus+%3B%29')
   }
 
 }
