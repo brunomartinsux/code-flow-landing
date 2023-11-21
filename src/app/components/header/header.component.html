@@ -1,6 +1,6 @@
 <div class="row px-4 py-3 header-container justify-content-between" #headerContainer>
     <div class="col navbar-brand mt-2">
-        <img (click)="routeEmitter.emit('main-header-component');" src="assets/Logo.svg" alt="" width="150px" class="header-icon-main">
+        <img (click)="routeEmitter.emit('main-header-component');" src="../../../assets/Logo.svg" alt="" width="150px" class="header-icon-main">
     </div>
     <div class="col-auto m-2">
         <div class="icon-container" [ngClass]="{'click-on': showMenu}" *ngIf="window.innerWidth < 1000">
